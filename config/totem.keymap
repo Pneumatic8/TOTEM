@@ -51,6 +51,11 @@
             key-positions = <11 12 13>;
             bindings = <&tog 4>;
         };
+
+        game {
+            bindings = <&tog 5>;
+            key-positions = <16 17 18>;
+        };
     };
 
     macros {
@@ -101,10 +106,10 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        nav_layer {
+        num_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAVI";
+            label = "num";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -118,10 +123,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &trans     &kp CAPS        &kp EQUAL  &kp LBRC    &kp RBRC      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT   &kp UP_ARROW    &kp RIGHT  &kp LBKT    &kp RBKT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP  &kp DOWN_ARROW  &kp PG_DN  &kp LPAR    &kp RPAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp BSLH
-                              &trans          &trans     &trans      &kp NUMBER_0  &mo 3         &trans
+        &kp TILDE   &kp GRAVE  &kp UNDERSCORE  &kp EQUAL          &kp LBRC    &kp RBRC      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
+        &kp LSHFT   &trans     &kp SQT         &kp DOUBLE_QUOTES  &kp LBKT    &kp RBKT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
+&trans  &kp KP_NUM  &kp CAPS   &kp INSERT      &trans             &kp LPAR    &kp RPAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp BSLH
+                               &trans          &trans             &trans      &kp NUMBER_0  &mo 3         &trans
             >;
         };
 
@@ -144,10 +149,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL      &kp AT  &kp HASH  &kp DLLR           &kp PRCNT          &kp CARET   &kp AMPS    &trans        &kp SQT    &kp DQT
-        &kp LEFT_GUI  &trans  &trans    &trans             &trans             &kp C_MUTE  &kp LEFT    &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans        &trans  &trans    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PREV  &kp C_NEXT  &kp DOWN      &trans     &kp BSLH  &trans
-                              &trans    &mo 3              &trans             &kp C_PP    &trans      &trans
+        &trans        &trans                &trans                &trans             &trans             &trans      &trans      &trans        &trans     &trans
+        &kp LEFT_GUI  &kp LEFT_ALT          &kp LCTRL             &kp LEFT_SHIFT     &trans             &kp C_MUTE  &kp LEFT    &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PREV  &kp C_NEXT  &kp DOWN      &trans     &trans  &trans
+                                            &trans                &mo 3              &trans             &kp C_PP    &trans      &trans
             >;
         };
 
@@ -170,10 +175,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+        &sys_reset    &bt BT_CLR    &out OUT_TOG  &bootloader   &trans          &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                    &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
 
@@ -182,7 +187,7 @@
         Mouse {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "TVP 1";
+            label = "mouse";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -200,6 +205,15 @@
         &trans     &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &none   &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none
 &trans  &kp LSHFT  &trans     &trans     &trans     &trans    &none   &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &none  &none
                               &trans     &trans     &trans    &trans  &trans          &trans
+            >;
+        };
+
+        game {
+            bindings = <
+       &kp TAB    &kp Q  &kp N3  &kp E      &kp R     &none  &none  &none  &none  &none
+       &kp LSHFT  &kp A  &kp W   &kp D      &kp F     &none  &kp M  &kp I  &none  &none
+&none  &kp LCTRL  &kp B  &kp S   &kp C      &kp V     &none  &none  &none  &none  &none  &none
+                         &kp N1  &kp SPACE  &kp N2    &none  &none  &none
             >;
         };
 
