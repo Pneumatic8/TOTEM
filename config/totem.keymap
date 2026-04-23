@@ -104,10 +104,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp TILDE   &kp GRAVE  &kp UNDERSCORE  &kp EQUAL          &kp LBRC    &kp RBRC      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
-        &kp LSHFT   &trans     &kp SQT         &kp DOUBLE_QUOTES  &kp LBKT    &kp RBKT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
-&trans  &kp KP_NUM  &kp CAPS   &kp INSERT      &trans             &kp LPAR    &kp RPAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp BSLH
-                               &trans          &trans             &trans      &kp NUMBER_0  &mo 3         &trans
+        &kp TILDE   &kp GRAVE  &kp UNDERSCORE  &kp EQUAL          &kp LBRC                &kp RBRC           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
+        &kp LSHFT   &trans     &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS    &kp RPAR           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
+&trans  &kp KP_NUM  &kp CAPS   &kp INSERT      &trans             &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp BSLH
+                               &trans          &trans             &trans                  &kp NUMBER_0       &mo 3         &trans
             >;
         };
 
