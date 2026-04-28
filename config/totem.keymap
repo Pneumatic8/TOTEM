@@ -128,9 +128,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans        &trans                &trans                &trans             &trans             &trans      &trans      &trans        &trans     &trans
-        &kp LEFT_GUI  &kp LEFT_ALT          &kp LCTRL             &kp LEFT_SHIFT     &trans             &kp C_MUTE  &kp LEFT    &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PREV  &kp C_NEXT  &kp DOWN      &trans     &trans  &trans
+        &trans        &trans                &trans                &trans             &trans             &trans      &trans      &trans        &trans     &kp LEFT_ALT
+        &kp LEFT_GUI  &kp LEFT_ALT          &kp LCTRL             &kp LEFT_SHIFT     &trans             &kp C_MUTE  &kp LEFT    &kp UP_ARROW  &kp RIGHT  &kp LEFT_SHIFT
+&trans  &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PREV  &kp C_NEXT  &kp DOWN      &trans     &kp LCTRL       &trans
                                             &trans                &mo 3              &trans             &kp C_PP    &trans      &trans
             >;
         };
@@ -152,7 +152,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans     &trans     &trans     &trans     &trans    &none   &msc SCRL_DOWN  &trans          &msc SCRL_UP     &none
+        &trans     &trans     &trans     &trans     &trans    &none   &msc SCRL_DOWN  &none           &msc SCRL_UP     &none
         &trans     &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &none   &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none
 &trans  &kp LSHFT  &trans     &trans     &trans     &trans    &none   &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &none  &none
                               &trans     &trans     &trans    &trans  &trans          &trans
