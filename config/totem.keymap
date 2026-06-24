@@ -82,7 +82,7 @@
             bindings = <
            &kp Q       &kp W       &kp F        &kp P        &kp B        &kp J      &kp L        &kp U        &kp Y       &kp SEMI
            &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G        &kp M      &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
-&kp LCTRL  &kp Z       &kp X       &kp C        &kp D        &kp V        &kp K      &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
+&kp LCTRL  &kp Z       &kp X       &kp C        &kp D        &kp V        &kp K      &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp RCTRL
                                    &kp DEL      &lt 1 TAB    &kp ENTER    &kp SPACE  &mo 2        &kp BSPC
             >;
         };
@@ -104,10 +104,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp TILDE   &kp GRAVE  &kp UNDERSCORE  &kp EQUAL          &kp LBRC                &kp RBRC           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
-        &kp LSHFT   &trans     &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS    &kp RPAR           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
-&trans  &kp KP_NUM  &kp CAPS   &kp INSERT      &trans             &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp BSLH
-                               &trans          &trans             &trans                  &kp NUMBER_0       &mo 3         &trans
+        &kp TILDE   &kp GRAVE      &kp UNDERSCORE  &kp EQUAL          &kp LBRC                &kp RBRC           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
+        &kp LSHFT   &kp BACKSLASH  &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS    &kp RPAR           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
+&trans  &kp KP_NUM  &kp CAPS       &kp INSERT      &trans             &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp SLASH
+                                   &trans          &trans             &trans                  &kp NUMBER_0       &mo 3         &trans
             >;
         };
 
@@ -130,7 +130,7 @@
             bindings = <
         &trans        &trans                &trans                &trans             &trans             &trans      &trans      &trans        &trans     &kp LEFT_ALT
         &kp LEFT_GUI  &kp LEFT_ALT          &kp LCTRL             &kp LEFT_SHIFT     &trans             &kp C_MUTE  &kp LEFT    &kp UP_ARROW  &kp RIGHT  &kp LEFT_SHIFT
-&trans  &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PREV  &kp C_NEXT  &kp DOWN      &trans     &kp LCTRL       &trans
+&trans  &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PREV  &kp C_NEXT  &kp DOWN      &trans     &kp RIGHT_WIN   &trans
                                             &trans                &mo 3              &trans             &kp C_PP    &trans      &trans
             >;
         };
