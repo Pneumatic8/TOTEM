@@ -129,8 +129,8 @@
 
             bindings = <
         &trans        &trans                &trans                &trans             &trans             &trans      &trans      &trans        &trans     &kp LEFT_ALT
-        &kp LEFT_GUI  &kp LEFT_ALT          &kp LCTRL             &kp LEFT_SHIFT     &trans             &kp C_MUTE  &kp LEFT    &kp UP_ARROW  &kp RIGHT  &kp LEFT_SHIFT
-&trans  &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PREV  &kp C_NEXT  &kp DOWN      &trans     &kp RIGHT_WIN   &trans
+        &kp LEFT_GUI  &kp LEFT_ALT          &kp LCTRL             &kp LEFT_SHIFT     &trans             &kp C_MUTE  &kp LEFT    &kp UP_ARROW  &kp RIGHT  &kp RWIN
+&trans  &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_PREV  &kp C_NEXT  &kp DOWN      &trans     &kp RIGHT_SHIFT  &trans
                                             &trans                &mo 3              &trans             &kp C_PP    &trans      &trans
             >;
         };
